@@ -75,6 +75,7 @@ public class DoubanBookMovieMusicServiceTest extends TestCase {
 	  DoubanSubjectListObj result = instance.getMoviesTop250(start, count);
 	  System.out.println("title : " + result.getTitle());
 	  assertEquals(result.getTitle(), "豆瓣电影Top250");
+	  System.out.println(result.getCount()+"---"+result.getSubjects().get(0).getTitle()+"--"+result.getSubjects().get(0).getComments_count()+"--"+result.getSubjects().get(0).getImages());
   }
 
   /**
